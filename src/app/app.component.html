@@ -1,0 +1,22 @@
+
+<div *ngIf="players.length>0">List of Players</div>
+<div *ngIf="players.length==0">No Players</div>
+
+<div>
+  <li *ngFor="let i of players">{{i}}</li>
+</div>
+<p>
+  {{message}}
+</p>
+
+<div>
+  <input [(ngModel)]="inputValue" placeholder="type here">
+  <p>You typed : {{inputValue}}</p>
+</div>
+
+<br><br><hr><br><br>
+
+
+
+
+
